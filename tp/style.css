@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F9FAFB;
+    color: #607D8B;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(
+        135deg,
+        #E3F2FD 0%,
+        #FFEEDD 25%,
+        #FFD8BE 50%,
+        #FCB1A6 75%,
+        #F2D0A9 100%
+    );
+    background-size: cover;
+    filter: blur(100px);
+    animation: moveWave 45s ease infinite alternate;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+@keyframes moveWave {
+    0% {
+        transform: translate(-15%, -15%);
+    }
+    100% {
+        transform: translate(15%, 15%);
+    }
+}
+
+header {
+    padding: 2.5rem 1rem;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #37474F;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.tp-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.tp-list li {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.tp-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.tp-list li a {
+    display: block;
+    text-align: center;
+    padding: 1.25rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #37474F;
+    transition: color 0.2s ease;
+}
+
+.tp-list li:hover a {
+    color: #D88C9A;
+}
+
+@media (max-width: 600px) {
+    .tp-list {
+        grid-template-columns: 1fr;
+    }
+}
