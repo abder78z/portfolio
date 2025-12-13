@@ -18,10 +18,10 @@ body::before {
     background: linear-gradient(
         135deg,
         #E3F2FD 0%,
-        #B8B8FF 25%,
-        #9381FF 50%,
-        #E3F2FD 75%,
-        #F9FAFB 100%
+        #FFEEDD 25%,
+        #FFD8BE 50%,
+        #FCB1A6 75%,
+        #F2D0A9 100%
     );
     background-size: cover;
     filter: blur(100px);
@@ -92,7 +92,7 @@ header h1 {
 }
 
 .tp-list li:hover a {
-    color: #00BCD4;
+    color: #D88C9A;
 }
 
 @media (max-width: 600px) {
