@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  }
+{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
 
 html {
 scroll-behavior: smooth;
@@ -70,7 +70,6 @@ animation-delay: -9s;
 transform: translate(0, 0) scale(1);
 }
 
-```
 50% {
     transform: translate(40px, -30px) scale(1.08);
 }
@@ -78,11 +77,10 @@ transform: translate(0, 0) scale(1);
 100% {
     transform: translate(-30px, 40px) scale(0.95);
 }
-```
 
 }
 
-/* HEADER */
+
 
 header {
 padding: 75px 20px 50px;
@@ -123,14 +121,14 @@ line-height: 1.7;
 color: #737d8f;
 }
 
-/* MAIN */
+
 
 .container {
 width: min(1000px, calc(100% - 40px));
 margin: 0 auto 70px;
 }
 
-/* SECTION */
+
 
 .section {
 margin-bottom: 65px;
@@ -183,7 +181,7 @@ color: #8992a1;
 text-align: right;
 }
 
-/* CARDS */
+
 
 .tp-list {
 list-style: none;
@@ -197,75 +195,75 @@ opacity: 0;
 animation: cardAppear 0.6s ease forwards;
 }
 
-.tp-list li:nth-child(1) {
+.tp-list li(1) {
 animation-delay: 0.05s;
 }
 
-.tp-list li:nth-child(2) {
+.tp-list li(2) {
 animation-delay: 0.10s;
 }
 
-.tp-list li:nth-child(3) {
+.tp-list li(3) {
 animation-delay: 0.15s;
 }
 
-.tp-list li:nth-child(4) {
+.tp-list li(4) {
 animation-delay: 0.20s;
 }
 
-.tp-list li:nth-child(5) {
+.tp-list li(5) {
 animation-delay: 0.25s;
 }
 
-.tp-list li:nth-child(6) {
+.tp-list li(6) {
 animation-delay: 0.30s;
 }
 
-.tp-list li:nth-child(7) {
+.tp-list li(7) {
 animation-delay: 0.35s;
 }
 
-.tp-list li:nth-child(8) {
+.tp-list li(8) {
 animation-delay: 0.40s;
 }
 
-.tp-list li:nth-child(9) {
+.tp-list li(9) {
 animation-delay: 0.45s;
 }
 
-.tp-list li:nth-child(10) {
+.tp-list li(10) {
 animation-delay: 0.50s;
 }
 
-.tp-list li:nth-child(11) {
+.tp-list li(11) {
 animation-delay: 0.55s;
 }
 
-.tp-list li:nth-child(12) {
+.tp-list li(12) {
 animation-delay: 0.60s;
 }
 
-.tp-list li:nth-child(13) {
+.tp-list li(13) {
 animation-delay: 0.65s;
 }
 
-.tp-list li:nth-child(14) {
+.tp-list li(14) {
 animation-delay: 0.70s;
 }
 
-.tp-list li:nth-child(15) {
+.tp-list li(15) {
 animation-delay: 0.75s;
 }
 
-.tp-list li:nth-child(16) {
+.tp-list li(16) {
 animation-delay: 0.80s;
 }
 
-.tp-list li:nth-child(17) {
+.tp-list li(17) {
 animation-delay: 0.85s;
 }
 
-/* CARD */
+
 
 .tp-list li a {
 min-height: 125px;
@@ -303,7 +301,7 @@ right: -45px;
 transition: transform 0.45s ease;
 }
 
-.tp-list li a:hover {
+.tp-list li a {
 transform: translateY(-5px);
 border-color: rgba(124, 110, 230, 0.22);
 box-shadow:
@@ -315,7 +313,7 @@ box-shadow:
 transform: scale(1.5);
 }
 
-/* NUMBER */
+
 
 .number {
 position: relative;
@@ -334,13 +332,13 @@ font-weight: 700;
 transition: all 0.3s ease;
 }
 
-.tp-list li a:hover .number {
+.tp-list li a .number {
 background: #7566df;
 color: #ffffff;
 transform: rotate(-5deg);
 }
 
-/* TEXT */
+
 
 .tp-list li a div {
 position: relative;
@@ -362,7 +360,7 @@ line-height: 1.45;
 color: #858e9d;
 }
 
-/* ARROW */
+
 
 .arrow {
 position: absolute;
@@ -374,12 +372,12 @@ color: #a7adba;
 transition: all 0.3s ease;
 }
 
-.tp-list li a:hover .arrow {
+.tp-list li a .arrow {
 color: #7566df;
 transform: translate(3px, -3px);
 }
 
-/* FOOTER */
+
 
 footer {
 text-align: center;
@@ -388,7 +386,7 @@ color: #9ba3b1;
 font-size: 0.72rem;
 }
 
-/* ANIMATIONS */
+
 
 @keyframes cardAppear {
 from {
@@ -396,12 +394,10 @@ opacity: 0;
 transform: translateY(18px);
 }
 
-
 to {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 }
 
@@ -411,12 +407,10 @@ opacity: 0;
 transform: translateY(25px);
 }
 
-
 to {
     opacity: 1;
     transform: translateY(0);
 }
-
 
 }
 
@@ -426,20 +420,17 @@ opacity: 0;
 transform: translateY(-20px);
 }
 
-
 to {
     opacity: 1;
     transform: translateY(0);
 }
 
-
 }
 
-/* TABLET */
+
 
 @media (max-width: 800px) {
 
-```
 .tp-list {
     grid-template-columns: repeat(2, 1fr);
 }
@@ -454,14 +445,12 @@ to {
     text-align: left;
 }
 
-
 }
 
 /* MOBILE */
 
 @media (max-width: 560px) {
 
-```
 header {
     padding: 55px 18px 40px;
 }
@@ -493,6 +482,5 @@ header h1 {
 .blob {
     filter: blur(60px);
 }
-
 
 }
